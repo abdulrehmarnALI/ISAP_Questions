@@ -5,3 +5,9 @@
 
 import os
 
+# function to read numbers.txt file
+def readFile():
+    f = open('numbers.txt', 'r')
+    # splitlines func used to turn each new line into an array entry
+    return f.read().splitlines
+
