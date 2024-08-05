@@ -1,8 +1,6 @@
 :root {
-    --green: #1aa021;
     --pastel-green: #daffd9;
     --charcoal-gray: #36454F;
-    --soft-silver: #C0C0C0;
     --dark-olive-green: #556B2F;
 }
 
@@ -20,7 +18,7 @@ body {
 
 h2 {
     /* font family inherited from body */
-    color: var(--green);
+    color: var(--dark-olive-green);
     font-weight: 600;
     font-style: normal;
 }
@@ -59,6 +57,6 @@ ol {
 
 ol li {
     list-style: upper-roman;
-    color: var(--dark-olive-green);
+    color: var(--charcoal-gray);
     margin-bottom: 0.6rem;
 }
