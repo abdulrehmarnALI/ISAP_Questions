@@ -9,7 +9,7 @@ import os
 def readFile():
     f = open('numbers.txt', 'r')
     # splitlines func used to turn each new line into an array entry
-    return f.read().splitlines
+    return f.read().splitlines()
 
 def getMostFrequent(data):
     # dict to store number:frequency pairs
@@ -25,6 +25,7 @@ def getMostFrequent(data):
 
     # sorted function puts values in ascending order
     sorted_dict = sorted(frequencies, key=frequencies.get, reverse=True)
+    print("The 5 most frequent numbers found in the file are:")
     # print top 5 most frequent
     for number in sorted_dict[:5]:
         print(number)
