@@ -1,6 +1,6 @@
 # had to Google how to do this question
 # found this most tricky of the four, others were simple
-sort numbers.txt | uniq -c | sort -nr | head -n 5 | tr -s ''
+sort numbers.txt | uniq -c | sort -nr | head -n 5 | tr -s '' | cut -d '' -f3
 # sort to group identical numbers together
 # numbers.txt can be refernced directly
 # uniq -c counts each unique number found
