@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="question_4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="question_4.js"></script>
+    <title>ISAP Question 4</title>
+</head>
+<body>
+    <div class="main_container">
+        <h2>Find the Most Frequent Numbers</h2>
+        <!-- autocomplete off in file input prevents file preloading on page refresh -->
+        <input type="file" id="fileUpload" accept=".txt" autocomplete="off">
+        <input type="button" value="View Most Frequent Numbers" onclick="(uploadFile())">
+        <span>The 5 most frequent numbers found in the file are:</span>
+            <ol id="results"></ol>
+    </div>
+</body>
+</html>
