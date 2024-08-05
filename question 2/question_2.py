@@ -5,7 +5,7 @@
 
 import os
 
-# function to read numbers.txt file
+# function to read numbers.txt file, found in same working directory as .py file
 def readFile():
     f = open('numbers.txt', 'r')
     # splitlines func used to turn each new line into an array entry
@@ -22,4 +22,13 @@ def getMostFrequent(data):
             frequencies[number] += 1
         else:
             frequencies[number] = 1
-            
+
+    # sorted function puts values in ascending order
+    sorted_dict = sorted(frequencies, key=frequencies.get, reverse=True)
+    # print top 5 most frequent
+    for number in sorted_dict[:5]:
+        print(number)
+
+if __name__  == "__main__":
+    print("Current working directory:", os.getcwd())
+    getMostFrequent(readFile())
